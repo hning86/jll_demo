@@ -1,0 +1,46 @@
+# --- General Operating System and IDE Files ---
+# Visual Studio Code
+.vscode/
+
+# Thumbs.db (Windows)
+Thumbs.db
+# .DS_Store (macOS)
+.DS_Store
+
+# --- C# and .NET Files ---
+# Build artifacts
+[Bb]in/
+[Oo]bj/
+# User-specific files
+*.user
+*.suo
+# Project files
+*.csproj.user
+*.resharper
+*.sln.ide
+# NuGet packages (managed by the build system)
+packages/
+# VS Test files
+TestResults/
+# Azure Publish/Temporary files
+publish/
+_PublishedWebsites/
+
+# --- Python Files and Environments ---
+# Compiled python files
+__pycache__/
+*.pyc
+# Python environment files
+.venv/
+env/
+venv/
+
+# uv-specific environment management
+# uv environments are typically named .venv, venv, or env and are covered above,
+# but we explicitly ignore any uv cache directories if they are created locally.
+.uv/
+
+# --- General Log and Temporary Files ---
+*.log
+*.tmp
+*.bak

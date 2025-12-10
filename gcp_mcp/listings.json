@@ -1,0 +1,362 @@
+[
+    {
+        "listing_id": "CRE1001",
+        "property_type": "Mixed-Use Property",
+        "address": "1490 Oak Ave",
+        "district": "Downtown Core",
+        "size_sqft": 77000,
+        "listing_price": 46662000,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1002",
+        "property_type": "Industrial Warehouse",
+        "address": "1285 River Rd",
+        "district": "Tech Corridor",
+        "size_sqft": 350800,
+        "listing_price": 76123600,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1003",
+        "property_type": "Mixed-Use Property",
+        "address": "1649 Main St",
+        "district": "Financial District",
+        "size_sqft": 92800,
+        "listing_price": 33315200,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1004",
+        "property_type": "Industrial Warehouse",
+        "address": "1568 Commerce Blvd",
+        "district": "Industrial Park",
+        "size_sqft": 470800,
+        "listing_price": 97455600,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1005",
+        "property_type": "Industrial Warehouse",
+        "address": "1844 Market St",
+        "district": "Industrial Park",
+        "size_sqft": 438200,
+        "listing_price": 91145600,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1006",
+        "property_type": "Industrial Warehouse",
+        "address": "1081 Oak Ave",
+        "district": "Tech Corridor",
+        "size_sqft": 129800,
+        "listing_price": 28296400,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1007",
+        "property_type": "Industrial Warehouse",
+        "address": "766 Commerce Blvd",
+        "district": "Tech Corridor",
+        "size_sqft": 396100,
+        "listing_price": 37233400,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1008",
+        "property_type": "Mixed-Use Property",
+        "address": "1469 Market St",
+        "district": "Historic Quarter",
+        "size_sqft": 65600,
+        "listing_price": 42836800,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1009",
+        "property_type": "Office Building",
+        "address": "55 River Rd",
+        "district": "Downtown Core",
+        "size_sqft": 195300,
+        "listing_price": 80658900,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1010",
+        "property_type": "Mixed-Use Property",
+        "address": "160 Innovation Drive",
+        "district": "Downtown Core",
+        "size_sqft": 140000,
+        "listing_price": 56000000,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1011",
+        "property_type": "Office Building",
+        "address": "439 Innovation Drive",
+        "district": "Financial District",
+        "size_sqft": 145400,
+        "listing_price": 81714800,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1012",
+        "property_type": "Mixed-Use Property",
+        "address": "510 Commerce Blvd",
+        "district": "Downtown Core",
+        "size_sqft": 98900,
+        "listing_price": 41439100,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1013",
+        "property_type": "Office Building",
+        "address": "1668 Commerce Blvd",
+        "district": "Tech Corridor",
+        "size_sqft": 27100,
+        "listing_price": 25528200,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1014",
+        "property_type": "Industrial Warehouse",
+        "address": "1178 Oak Ave",
+        "district": "Industrial Park",
+        "size_sqft": 52600,
+        "listing_price": 10677800,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1015",
+        "property_type": "Office Building",
+        "address": "421 Commerce Blvd",
+        "district": "Downtown Core",
+        "size_sqft": 179500,
+        "listing_price": 167114500,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1016",
+        "property_type": "Industrial Warehouse",
+        "address": "860 Innovation Drive",
+        "district": "Industrial Park",
+        "size_sqft": 472700,
+        "listing_price": 60978300,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1017",
+        "property_type": "Office Building",
+        "address": "1724 Market St",
+        "district": "Tech Corridor",
+        "size_sqft": 161900,
+        "listing_price": 128062900,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1018",
+        "property_type": "Mixed-Use Property",
+        "address": "1383 Oak Ave",
+        "district": "Financial District",
+        "size_sqft": 33600,
+        "listing_price": 19555200,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1019",
+        "property_type": "Retail Space",
+        "address": "1779 Innovation Drive",
+        "district": "Downtown Core",
+        "size_sqft": 7400,
+        "listing_price": 303400,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1020",
+        "property_type": "Retail Space",
+        "address": "829 Commerce Blvd",
+        "district": "Historic Quarter",
+        "size_sqft": 14000,
+        "listing_price": 1106000,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1021",
+        "property_type": "Retail Space",
+        "address": "137 River Rd",
+        "district": "Waterfront District",
+        "size_sqft": 12100,
+        "listing_price": 1294700,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1022",
+        "property_type": "Office Building",
+        "address": "26 Oak Ave",
+        "district": "Downtown Core",
+        "size_sqft": 45000,
+        "listing_price": 23355000,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1023",
+        "property_type": "Office Building",
+        "address": "1315 Main St",
+        "district": "Downtown Core",
+        "size_sqft": 175100,
+        "listing_price": 140955500,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1024",
+        "property_type": "Office Building",
+        "address": "1177 Innovation Drive",
+        "district": "Downtown Core",
+        "size_sqft": 39300,
+        "listing_price": 34308900,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1025",
+        "property_type": "Industrial Warehouse",
+        "address": "488 Innovation Drive",
+        "district": "Industrial Park",
+        "size_sqft": 251500,
+        "listing_price": 28922500,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1026",
+        "property_type": "Retail Space",
+        "address": "512 Market St",
+        "district": "Historic Quarter",
+        "size_sqft": 12800,
+        "listing_price": 755200,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1027",
+        "property_type": "Retail Space",
+        "address": "500 Market St",
+        "district": "Historic Quarter",
+        "size_sqft": 7300,
+        "listing_price": 576700,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1028",
+        "property_type": "Retail Space",
+        "address": "410 River Rd",
+        "district": "Historic Quarter",
+        "size_sqft": 3700,
+        "listing_price": 262700,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1029",
+        "property_type": "Retail Space",
+        "address": "71 Innovation Drive",
+        "district": "Downtown Core",
+        "size_sqft": 5800,
+        "listing_price": 220400,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1030",
+        "property_type": "Office Building",
+        "address": "1387 Market St",
+        "district": "Financial District",
+        "size_sqft": 98400,
+        "listing_price": 62385600,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1031",
+        "property_type": "Mixed-Use Property",
+        "address": "1669 Innovation Drive",
+        "district": "Downtown Core",
+        "size_sqft": 113000,
+        "listing_price": 35708000,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1032",
+        "property_type": "Industrial Warehouse",
+        "address": "249 Main St",
+        "district": "Tech Corridor",
+        "size_sqft": 163000,
+        "listing_price": 40261000,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1033",
+        "property_type": "Office Building",
+        "address": "1597 Main St",
+        "district": "Downtown Core",
+        "size_sqft": 184800,
+        "listing_price": 103488000,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1034",
+        "property_type": "Retail Space",
+        "address": "1936 Commerce Blvd",
+        "district": "Downtown Core",
+        "size_sqft": 10000,
+        "listing_price": 710000,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1035",
+        "property_type": "Industrial Warehouse",
+        "address": "71 River Rd",
+        "district": "Industrial Park",
+        "size_sqft": 188300,
+        "listing_price": 19959800,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1036",
+        "property_type": "Mixed-Use Property",
+        "address": "1241 Market St",
+        "district": "Downtown Core",
+        "size_sqft": 96600,
+        "listing_price": 31684800,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1037",
+        "property_type": "Industrial Warehouse",
+        "address": "1398 Oak Ave",
+        "district": "Industrial Park",
+        "size_sqft": 145800,
+        "listing_price": 34992000,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1038",
+        "property_type": "Office Building",
+        "address": "194 Main St",
+        "district": "Downtown Core",
+        "size_sqft": 157600,
+        "listing_price": 121509600,
+        "status": "For Lease"
+    },
+    {
+        "listing_id": "CRE1039",
+        "property_type": "Mixed-Use Property",
+        "address": "559 River Rd",
+        "district": "Financial District",
+        "size_sqft": 132900,
+        "listing_price": 40800300,
+        "status": "For Sale"
+    },
+    {
+        "listing_id": "CRE1040",
+        "property_type": "Industrial Warehouse",
+        "address": "263 Commerce Blvd",
+        "district": "Tech Corridor",
+        "size_sqft": 374000,
+        "listing_price": 93500000,
+        "status": "For Lease"
+    }
+]
