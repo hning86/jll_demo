@@ -35,6 +35,8 @@ __pycache__/
 env/
 venv/
 
+.env
+
 # uv-specific environment management
 # uv environments are typically named .venv, venv, or env and are covered above,
 # but we explicitly ignore any uv cache directories if they are created locally.
