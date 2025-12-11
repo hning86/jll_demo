@@ -58,7 +58,7 @@ azure_tools = MCPToolset(
     header_provider=get_azure_auth_header
 )
 
-root_agent_test = Agent(
+root_agent_gcp_tool_test = Agent(
     name="property_agent",
     model=model_name,
     description="The primary researcher that can access both property data and external knowledge.",
