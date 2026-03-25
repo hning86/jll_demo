@@ -14,6 +14,6 @@ public class HelloTool(ILogger<HelloTool> logger)
     )
     {
         logger.LogInformation("Saying hello");
-        return "Hello JLL (all the way from Azure)!";
+        return "Hello, all the way from Azure!";
     }
 }
