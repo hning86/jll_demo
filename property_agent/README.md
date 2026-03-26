@@ -45,6 +45,16 @@ AZURE_MCP_SERVER_URL=... # The URL of the Azure MCP server
 AZURE_MCP_SERVER_KEY=... # The API key for the Azure MCP server
 ```
 
+## Authentication (ID Tokens vs Access Tokens)
+
+The GCP MCP server is hosted on Cloud Run, which requires an **ID Token (OIDC Token)** for authentication.
+
+### Why an ID Token is Required
+Private Cloud Run services use Google Cloud IAM for service-to-service authorization. To invoke them, you must provide an **ID Token (OIDC)** that specifies the target service URL as its `audience`. A standard Google API **Access Token** (used for Vertex AI, Storage, etc.) will be rejected with an Unauthorized error.
+
+### Token Fetching in the Agent
+The agent uses `get_id_token()` to fetch an OIDC token with the MCP server URL as the audience. For local dev fallback, it can utilize `gcloud auth print-identity-token` (which outputs an ID token) rather than `print-access-token`.
+
 ## Deployment
 
 The agent can be deployed to Vertex AI Agent Engine using the provided `deploy.sh` script:

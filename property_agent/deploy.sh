@@ -1,3 +1,6 @@
+# echo "Generating simplified requirements.txt..."
+# uv export --format requirements-txt --no-hashes --no-dev > requirements_simple.txt
+
 # update an existing instance
 uv run adk deploy agent_engine \
 --agent_engine_id 1547157995815698432 \
