@@ -8,7 +8,7 @@ The workspace consists of three primary services:
 
 -   **[`property_agent/`](./property_agent)**: The central Python-based AI agent using Google ADK. It acts as the coordinator between the user and the multi-cloud data sources.
 -   **[`gcp_mcp/`](./gcp_mcp)**: A Python-based Model Context Protocol (MCP) server exposing commercial real estate listings data hosted in Google Cloud.
--   **[`azure_mcp/`](./azure_mcp)**: An Azure Functions-based Model Context Protocol (MCP) server providing personalized user-facing features (such as saving favorite listings).
+-   **[`azure_mcp/`](./azure_mcp)**: An Azure Functions-based Model Context Protocol (MCP) server providing personalized user-facing features (such as saving, retrieving and removing favorite listings).
 
 ---
 

@@ -21,6 +21,8 @@ internal sealed class ToolsInformation
     public const string SaveFavoriteItemToolDescription = "Saves a user's favorite item.";
     public const string GetFavoriteItemsToolName = "get_favorite_items";
     public const string GetFavoriteItemsToolDescription = "Retrieves the user's favorite items.";
+    public const string RemoveFavoriteItemToolName = "remove_favorite_item";
+    public const string RemoveFavoriteItemToolDescription = "Removes a user's favorite item.";
     public const string FavoriteItemPropertyName = "item";
     public const string FavoriteItemPropertyDescription = "The item to save as favorite.";
 }
