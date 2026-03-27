@@ -15,6 +15,7 @@ import google.auth
 import google.auth.transport.requests
 import google.oauth2.id_token
 from google.auth.transport.requests import Request as GoogleAuthRequest
+from .auth_utils import token_manager
 
 # --- Setup Logging and Environment ---
 
@@ -27,45 +28,17 @@ model_name = os.getenv("MODEL")
 # Configure the MCP Tool to connect to the Propertiesz MCP server
 mcp_server_url = os.getenv("MCP_SERVER_URL")
 azure_mcp_server_url = os.getenv("AZURE_MCP_SERVER_URL")
-azure_mcp_server_key = os.getenv("AZURE_MCP_SERVER_KEY")
-
-def get_id_token():
-    """Get an ID token to authenticate with the MCP server."""
-    print("getting id token...")
-    target_url = os.getenv("MCP_SERVER_URL")
-    audience = target_url.split('/mcp/')[0]
-    request = google.auth.transport.requests.Request()
-    id_token = google.oauth2.id_token.fetch_id_token(request, audience)
-    # print("got id token: ", id_token)
-    return id_token
-
-def get_auth_header(tool_context: ToolContext) -> Dict[str, Any]:
-    token = get_id_token()
-    return {"Authorization": f"Bearer {token}"}
-
-def get_azure_auth_header(tool_context: ToolContext) -> Dict[str, Any]:
-    return {"x-functions-key": azure_mcp_server_key}
 
 gcp_tools = MCPToolset(
     connection_params=StreamableHTTPConnectionParams(url=mcp_server_url),
     errlog=None,
-    header_provider=get_auth_header
+    header_provider=token_manager.get_gcp_auth_header
 )
 
 azure_tools = MCPToolset(
     connection_params=StreamableHTTPConnectionParams(url=azure_mcp_server_url),
     errlog=None,
-    header_provider=get_azure_auth_header
-)
-
-root_agent_gcp_tool_test = Agent(
-    name="property_agent",
-    model=model_name,
-    description="The primary researcher that can access both property data and external knowledge.",
-    instruction="""
-    You are a helpful commercial real estate property agent. Your goal is to fully answer user's questions by using the gcp_tools to get specific data about properties under the management (address, property type, price etc.). And then add some colorful descriptions based what you can infer from the properties data.
-    """,
-    tools=[gcp_tools]
+    header_provider=token_manager.get_azure_auth_header
 )
 
 root_agent = Agent(
