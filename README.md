@@ -16,7 +16,13 @@ The workspace consists of three primary services:
 
 ```mermaid
 graph TD
-    User(["User 🗣️"]) --> PA["Property Agent 🤖 <br/> (Google ADK)"]
+    User(["User 🗣️"]) --> GE["Gemini Enterprise 🚀"]
+    
+    subgraph VAAE ["Vertex AI Agent Engine ⚙️"]
+        PA["Property Agent 🤖 <br/> (Google ADK)"]
+    end
+
+    GE -- "Registered Agent" --> PA
     PA -->|Retrieve listings| GCP["GCP MCP ☁️ <br/> (Python)"]
     PA -->|Manage favorites| AZ["Azure MCP ☁️ <br/> (Azure Functions)"]
 ```
@@ -25,9 +31,32 @@ graph TD
 
 ## 🏗 High-Level Flow
 
-1. **Query**: The user interacts with the `property_agent`.
-2. **Retrieve**: The agent calls the **GCP MCP** to find specific property details (address, price, type).
-3. **Persist/View State**: The agent uses the **Azure MCP** to query or store personalized data like user favorites.
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant GE as Gemini Enterprise
+    participant VAAE as Vertex AI Agent Engine<br/>(Property Agent)
+    participant GCP as GCP MCP Server<br/>(Listings)
+    participant AZ as Azure MCP Server<br/>(Favorites)
+
+    User->>GE: Asks a real estate query
+    GE->>VAAE: Routes request to the registered Agent
+    VAAE->>AZ: Retrieves favorite property IDs
+    AZ-->>VAAE: Returns saved favorite IDs
+    VAAE->>GCP: Fetches detailed listing data for IDs
+    GCP-->>VAAE: Returns commercial listings data
+    VAAE->>AZ: Persists new favorites (if requested)
+    AZ-->>VAAE: Confirms state updated
+    VAAE-->>GE: Synthesizes the multi-cloud data
+    GE-->>User: Delivers the final formulated response
+```
+
+1. **Query**: The user submits a natural language request through **Gemini Enterprise**.
+2. **Routing**: Gemini Enterprise routes the prompt to the registered **Property Agent** hosted on **Vertex AI Agent Engine**.
+3. **Retrieve**: The agent dynamically calls the **GCP MCP** to find specific property details (address, price, type).
+4. **Persist/View State**: The agent uses the **Azure MCP** to query or store personalized data like user favorites.
+5. **Response**: The agent synthesizes the retrieved multi-cloud data and returns the final formulated answer to the user via Gemini Enterprise.
 
 ---
 
