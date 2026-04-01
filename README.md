@@ -23,7 +23,7 @@ graph TD
     end
 
     GE -- "Registered Agent" --> PA
-    PA -->|Retrieve listings| GCP["GCP MCP ☁️ <br/> (GCP Clound Run)"]
+    PA -->|Retrieve listings| GCP["GCP MCP ☁️ <br/> (GCP Cloud Run)"]
     PA -->|Manage favorites| AZ["Azure MCP ☁️ <br/> (Azure Functions)"]
 ```
 
